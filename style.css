@@ -1,0 +1,146 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    letter-spacing: 1px;
+    font-size:20px;
+    font-weight: bold;
+    background-color: rgb(248,248,248);
+}
+header{
+    background-color: #ffffff;
+}
+.top_header_container{
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+  
+}
+.logo{
+    margin:10px;
+}
+.menu_items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.menu_link{
+    list-style: none;
+    padding: 0 0px;
+    margin:10px;
+}
+
+a{
+ text-decoration: none;
+ color:rgb(36,47,101);
+ margin:0 15px;
+ padding: 0 15px ;
+ font-size:15px;
+}
+
+ a#talk-btn{
+    background-color: #ffffff;
+    border: solid #000000 1px;
+    padding:10px 15px ;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:40px;
+    cursor:pointer;
+    color:rgb(36,47,101);
+ }
+ a:hover{
+    background-color: #eeeeee;
+    padding:15px;
+ }
+ a#talk-btn:hover{
+    background-color: rgb(121,99,224);
+    color: #ffffff;
+    border: solid #ffffff 1px;
+ }
+ .toggle{
+    background: transparent;
+    border: transparent;
+    cursor:pointer;
+    position:fixed;
+    top:3%;
+    left:80%;
+    display:none;   
+}
+.close-btn{
+    background: transparent;
+    border: transparent;
+    cursor:pointer;
+    position:fixed;
+    top:3%;
+    left:40%;
+    display:none;
+}
+.fas,
+.fab{
+    padding:0.25rem;
+    font-size: 25px;
+    color:#999898; 
+}
+
+
+  @media (max-width: 768px) {
+    .top_header_container{
+        justify-content: flex-start; 
+        padding:0;
+    }
+    .logo{
+        margin:20px;
+    }
+    .menu{
+    background-color: #ffffff;
+    position: fixed;
+    height:100%;
+    transform: translate(-100%);
+    overflow: hidden;
+    transition: all ease-in ;
+    padding-top: 50px;
+    }
+     .menu_items{
+     display:block;
+
+     }
+     .menu_link{
+        margin:30px;
+     }
+     a:hover{
+        background-color: transparent;
+        color:rgb(121,99,224);
+     }
+     a#talk-btn{
+        border: none;
+        background-color: transparent;
+     }
+     a#talk-btn:hover{
+        background-color: transparent;
+        color:rgb(121,99,224);
+     }
+     .toggle{
+        display:block;
+     }
+     .show-side-bar{
+        transform: translate(0);
+    }
+    .close-btn{
+        display:block;
+    }
+     
+ } 
+ @media (max-width:1024px) {
+    .menu_items{
+        flex-wrap:wrap;
+    }
+ }
+ @media (max-width:1200px) {
+    .menu_items{
+        flex-wrap:wrap;
+    }
+ }
+
