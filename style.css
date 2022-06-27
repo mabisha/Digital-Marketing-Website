@@ -6,17 +6,16 @@
 }
 body{
     letter-spacing: 1px;
-    font-size:20px;
-    font-weight: bold;
+    font-size: 20px;
     background-color: rgb(248,248,248);
 }
-header{
+.header{
     background-color: #ffffff;
 }
-.top_header_container{
+.header_container{
     display: flex;
     justify-content: space-evenly;
-    padding:20px;
+    padding:10px;
   
 }
 .logo{
@@ -33,27 +32,26 @@ header{
     margin:10px;
 }
 
-a{
+header a{
  text-decoration: none;
  color:rgb(36,47,101);
- margin:0 15px;
- padding: 0 15px ;
- font-size:15px;
+ padding:0 10px;
+ font-size:16px;
+
 }
 
  a#talk-btn{
     background-color: #ffffff;
     border: solid #000000 1px;
     padding:10px 15px ;
-    font-size:15px;
-    font-weight:bold;
+    font-size:16px;
     border-radius:40px;
     cursor:pointer;
     color:rgb(36,47,101);
  }
- a:hover{
+ header a:hover{
     background-color: #eeeeee;
-    padding:15px;
+    padding:10px;
  }
  a#talk-btn:hover{
     background-color: rgb(121,99,224);
@@ -84,10 +82,203 @@ a{
     font-size: 25px;
     color:#999898; 
 }
+.main-center{
+    background-image: url(https://zakrademos.com/digital-marketing-02/wp-content/uploads/sites/106/2021/12/Banner-image.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:auto;
+    position:relative;
+    padding: 20px 15px 85px;
+   
+}
+.overlay{
+    background-color: rgba(44,62,106,.41);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.main-center-content{
+   text-align: center;
+   padding: 50px;
+   color: white;
+   position: relative;
+  
+  
+}
+
+.main-title{
+ margin-top:6rem;
+ margin-bottom: 2rem;
+}
+h1{
+    font-weight: 700;
+    font-size:54px;
+}
+.main-para{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-center p{
+   width:70%;
+   margin-bottom:2rem;
+   font-weight: 300;
+   font-size:20px;
+}
+main a{
+    width:150px;
+    font-size: 17px;
+    padding:10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 15px 15px 15px 0 ;
+    border: solid #ffffff 1px;
+}
+main a:hover{
+   background-color: transparent;
+   color:#ffffff
+}
+
+.clients{
+    background-color: #f8f8f8;
+}
+.clients-inner{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.clients h3{
+    padding:60px;
+    font-size: 20px;
+    color:rgb(36,47,101);
+}
+.clients-image{
+    display:flex;
+}
+.brand{
+  background-color: #ffffff;
+ }
+
+.brand-inner{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5rem 10rem;
+}
+.brand h2{
+    color:rgb(36,47,101);
+    font-size: 40px;
+    
+}
+.brand-inner-row{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brand-inner-row1,
+.brand-inner-row2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+}
+
+.brand .col,
+.brand .col1{
+    display:flex; 
+    flex-direction: column;
+    background-color:#f8f8f8;
+    margin: 15px;
+    padding: 35px;
+    border-radius: 15px 15px 15px 0;
+}
+.brand h5{
+    padding:10px 0;
+    color:rgb(36,47,101);
+}
+.brand p{
+    padding: 10px 0;
+    font-size: 15px;
+}
+.knowmore{
+    background-color: #f8f8f8;
+}
+.knowmore-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.knowmore img{
+   width:600px;
+   height:500px;
+   object-fit: cover;
+   margin:5rem 5rem;
+   border-radius: 15px 15px 15px 0;
+}
+.knowmore h2{
+    color: rgb(36,47,101);
+    font-size: 40px;
+}
+.knowmore p{
+    font-size:15px ;
+    padding:10px 0;
+    margin: 10px 0;
+}
 
 
+.knowmore a{
+    background-color: rgb(121,99,224);
+    color:#ffffff;
+    
+}
+.knowmore a:hover{
+    border: solid rgb(121,99,224) 1px;
+    color: rgb(121,99,224);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+.main .main-title{
+        margin-top:0;
+        margin-bottom: 0;
+    }
+.main h1{
+    font-size:20px;
+}
+.main p{
+    font-size: 10px;
+}
+
+}
   @media (max-width: 768px) {
-    .top_header_container{
+    .header_container{
         justify-content: flex-start; 
         padding:0;
     }
@@ -102,24 +293,25 @@ a{
     overflow: hidden;
     transition: all ease-in ;
     padding-top: 50px;
+    z-index:100;
     }
      .menu_items{
      display:block;
 
      }
      .menu_link{
-        margin:30px;
+        margin:40px 90px;
      }
-     a:hover{
+     .menu_link a:hover{
         background-color: transparent;
         color:rgb(121,99,224);
      }
-     a#talk-btn{
-        border: none;
+     .menu_link a#talk-btn{
+        border: #ffffff;
+        padding-left:10px;
         background-color: transparent;
      }
-     a#talk-btn:hover{
-        background-color: transparent;
+     .menu_link a#talk-btn:hover{
         color:rgb(121,99,224);
      }
      .toggle{
@@ -131,16 +323,71 @@ a{
     .close-btn{
         display:block;
     }
+    main .main-title{
+        margin-top:4rem;
+        margin-bottom: 1rem;
+    }
+    main h1{
+        font-size:30px
+    }
+    .clients-image{
+        display: grid;
+     } 
+     .knowmore img{
+        width:300px;
+        height:300px;
+        margin:0;
+     }
+     
+     
      
  } 
  @media (max-width:1024px) {
     .menu_items{
         flex-wrap:wrap;
     }
- }
+     h1{
+        font-size:45px
+    }
+    .clients-inner{
+        display:grid
+     }
+     .clients-image{
+        justify-content: center;
+    }
+    
+    .brand .brand-inner-row1,
+    .brand .brand-inner-row2{
+     
+        grid-template-columns: 1fr;
+     }
+     .knowmore-inner{
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+     
+     
+    }
+     
+    
  @media (max-width:1200px) {
     .menu_items{
         flex-wrap:wrap;
     }
+    .brand-inner{
+        padding:20px;
+    }
+    .brand-inner-row1,
+    .brand-inner-row2{
+        display:grid;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+     }   
+     .knowmore h2{
+        font-size: 30px;
+     }
+     .knowmore p{
+        font-size: 13px;
+     }
  }
 
