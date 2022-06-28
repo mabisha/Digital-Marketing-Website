@@ -251,8 +251,7 @@ main a:hover{
     padding: 2rem 7rem;
 }
 .knowmore img{
-   width:500px;
-   height:500px;
+   
    object-fit: cover;
    margin: 2rem 5rem;
    border-radius: 15px 15px 15px 0;
@@ -450,7 +449,13 @@ main a:hover{
     font-size:16px;
 }
 .intrest a{
-    color:rgb(121,99,224)
+    color:rgb(121,99,224);
+    background-color: #ffffff;
+}
+.intrest a:hover{
+    background-color: transparent;
+    color: #ffffff;
+    border:solid #ffffff 1px;
 }
 .social-icon{
     background-color: #ffffff;
@@ -595,7 +600,16 @@ footer a{
 .contact-col h4{
  margin: 20px 0;
 }
-
+#knowmore-img img{
+    width:600px;
+    height: auto;
+}
+#knowmore-services{
+    background-color: #ffffff;
+}
+#knowmore-services .knowmore-content{
+  margin: 2rem 5rem;
+}
 
 
 
@@ -621,9 +635,9 @@ footer a{
 .main p{
     font-size: 10px;
 }
-.knowmore .knowmore-inner img{
+.knowmore #knowmore-img img{
     width:200px;
-    height:200px;
+    height:auto;
     margin:0;
  }
 
@@ -684,9 +698,9 @@ footer a{
     .clients-image{
         display: grid;
      } 
-     .knowmore img{
+     #knowmore-img img{
         width:300px;
-        height:300px;
+        height:auto;
         margin:0;
      }
      .analytics-inner{
