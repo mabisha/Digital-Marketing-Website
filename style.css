@@ -118,9 +118,28 @@ header a{
  margin-top:6rem;
  margin-bottom: 2rem;
 }
-h1{
+main h1{
     font-weight: 700;
     font-size:54px;
+}
+main h2{
+    font-size: 40px;
+    color: rgb(36,47,101);
+}
+main h3{
+    font-size: 35px;
+    color: rgb(36,47,101);
+}
+main h4{
+    font-size: 30px; 
+    color: rgb(36,47,101);
+}
+main h5{
+    font-size: 20px;
+    color: rgb(36,47,101);
+}
+main p{
+    font-size: 15px;
 }
 .main-para{
     display:flex;
@@ -138,7 +157,8 @@ h1{
  main .main-center a,
  .knowmore a,
  .contact a,
- .intrest a{
+ .intrest a,
+ .contact-about a{
     width:150px;
     font-size: 17px;
     padding:10px;
@@ -249,7 +269,8 @@ main a:hover{
 
 
 .knowmore a,
-.contact a{
+.contact a,
+.contact-about a{
     background-color: rgb(121,99,224);
     color:#ffffff;
     
@@ -423,6 +444,7 @@ main a:hover{
 {
     padding: 10px;
     margin:5px;
+    color: #ffffff;
 } 
 .intrest p{
     font-size:16px;
@@ -520,9 +542,59 @@ footer a{
 }
 
 
+/* about */
 
+#about-main-center{
+    background-image: url(https://zakrademos.com/digital-marketing-02/wp-content/uploads/sites/106/2021/12/sub-page-heroimage.jpg);
+}
 
-
+#about-main-center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+}
+#about-main-center-content h4{
+    font-size: 35px;
+    font-weight: 400;
+    color: #ffffff;
+}
+#about-main-center-content p{
+    font-size: 15px;
+    font-weight:200;
+    margin: 0;
+   
+}
+#about-main-center-content a{
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #ffffff;
+}
+#about-blog{
+    background-color: #ffffff;
+}
+#about-blog .col{
+    background-color: #f8f8f8
+}
+.contact-about{
+    background-color: #f8f8f8;
+}
+.contact-about-inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+.contact-col1,
+.contact-col{
+  margin: 10px;
+}
+.contact-col1 p,
+.contact-col h4{
+ margin: 20px 0;
+}
 
 
 
@@ -627,9 +699,11 @@ footer a{
     .analytics p{
         font-size:10px;
     } 
+    .contact-about-inner{
+         flex-wrap: wrap;
     
      
- } 
+ } }
  @media (max-width:1024px) {
     .menu_items{
         flex-wrap:wrap;
@@ -663,6 +737,7 @@ footer a{
 
     .blog-inner-row{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .intrest-inner .bg{
         padding: 20px;
