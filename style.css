@@ -82,6 +82,10 @@ header a{
     font-size: 25px;
     color:#999898; 
 }
+.current{
+    background-color: #eeeeee;
+    padding:10px;
+}
 .main{
     width:100%; 
     padding-right: 0;
@@ -610,7 +614,63 @@ footer a{
 #knowmore-services .knowmore-content{
   margin: 2rem 5rem;
 }
-
+.message{
+    background-color: #ffffff;
+}.message p, .message h4,.message i, .message input { 
+    padding:10px 0;
+}
+.message input,
+.message textarea,
+.message button{
+    margin: 10px;
+}
+.message button{
+    padding:10px;
+    background-color: transparent;
+    border: solid #000000 1px;
+}
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: vertical;
+    min-height: 40px;
+    line-height: 20px;
+  }
+.message-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+.message-content{
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 25px 25px 25px 25px;
+}
+.message .note input{
+   padding: 30px;
+    
+   
+    
+}
+.note{
+    display: flex;
+    flex-direction: column;
+}
+.last-word{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 25px 25px 25px 25px;
+}
+.last-word-row2-col{
+    display: flex;
+    
+}
 
 
 
