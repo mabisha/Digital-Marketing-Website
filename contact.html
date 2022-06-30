@@ -43,30 +43,27 @@
                       <div class="main-center-content" id="about-main-center-content">
                           <h4>Contact</h4>
                           <p> <a href="home.html">Home</a>
-                              > Service</p>
+                              > Contact</p>
                       </div>
                   </div>
                   <div class="message">
                     <div class="message-inner">
                         <div class="message-content">
-                           <form action="form">
                             <h4>Send message</h4>
+                           <form id="myForm">
                             <div class="user-detail">
                                 <input type="text" name="username" id="username" placeholder="Mabisha Dahal">
-                            <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                                <input type="email" name="email" id="email" placeholder="abc@gmail.com">
                             </div>
-                            <div class="note">
-                                <textarea class="textarea" placeholder="message"></textarea> 
-                            </div>
-                            <button id= "btn" type="submit"> Submit</button>
+                            <textarea class="textarea" placeholder="message"></textarea> 
+                            <button type="button" id="submit-btn" onclick="myFunction()">Submit</button>
                            </form>
+                             <p id="submit-message"></p>
+                         
                         </div>
                         <div class="last-word">
-                            <div class="last-word-row1">
                                 <h4>Central Office</h4>
-                                <p>Rhoncus aliquet viverra lacinia lacus lobortis, nibh sagittis convallis<br> inceptos phasellus, id interdum hendrerit porttitor. Neque ad tempor hendrerit dignissim.</p>
-                            </div>
-                            <div class="last-word-row2">
+                                <p>Rhoncus aliquet viverra lacinia lacus lobortis, nibh sagittis convallis inceptos phasellus, id interdum hendrerit porttitor. Neque ad tempor hendrerit dignissim.</p>
                                 <div class="last-word-row2-col">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <p>Rockect Moon Street-8888, 999 Mars</p>
@@ -79,7 +76,6 @@
                                     <i class="fa-solid fa-envelope"></i>
                                     <p>first.last@demos.com</p>
                                 </div> 
-                            </div>
                         </div>
                     </div>
                   </div>

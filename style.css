@@ -10,7 +10,8 @@ body{
     background-color: rgb(248,248,248);
 }
 .header{
-background-color: #ffffff;}
+background-color: #ffffff;
+}
     
 .header_container{
     display: flex;
@@ -62,9 +63,9 @@ header a{
     background: transparent;
     border: transparent;
     cursor:pointer;
-    position:fixed;
+    position:relative;
     top:3%;
-    left:80%;
+    left:50%;
     display:none;   
 }
 .close-btn{
@@ -604,6 +605,8 @@ footer a{
 .contact-col h4{
  margin: 20px 0;
 }
+
+/* services */
 #knowmore-img img{
     width:600px;
     height: auto;
@@ -614,15 +617,33 @@ footer a{
 #knowmore-services .knowmore-content{
   margin: 2rem 5rem;
 }
+
+/* contact */
 .message{
     background-color: #ffffff;
 }.message p, .message h4,.message i, .message input { 
     padding:10px 0;
 }
+.message .user-detail{
+    display: flex;
+    padding:20px 0px;
+}
+.message ::placeholder{
+    color:#c0c0c0
+}
+.message input:focus,
+.message textarea:focus{
+    outline:none;
+    border: none;
+}
 .message input,
 .message textarea,
 .message button{
-    margin: 10px;
+    margin: 10px 15px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 1px;
 }
 .message button{
     padding:10px;
@@ -636,12 +657,14 @@ footer a{
     resize: vertical;
     min-height: 40px;
     line-height: 20px;
+    
   }
 .message-inner{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 10rem;
+    padding:5rem 5rem;
+  
 }
 .message-content{
     padding: 40px;
@@ -649,21 +672,16 @@ footer a{
     border-radius: 25px 25px 25px 25px;
 }
 .message .note input{
-   padding: 30px;
-    
-   
-    
+   padding: 30px;   
 }
 .note{
     display: flex;
     flex-direction: column;
 }
 .last-word{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 60px;
-    padding: 40px;
+    margin: 50px;
+    padding: 60px;
+    width: 100%;
     background-color: #f8f8f8;
     border-radius: 25px 25px 25px 25px;
 }
@@ -671,6 +689,14 @@ footer a{
     display: flex;
     
 }
+#submit-message{
+   
+    color: white;
+    padding: 10px;
+}
+.last-word i{
+    color:rgb(121,99,224);
+}
 
 
 
@@ -683,6 +709,8 @@ footer a{
 
 
 
+
+/* Responsive */
 
 @media(max-width: 480px){
 .main .main-title{
@@ -828,6 +856,9 @@ footer a{
     }
     .logo-para{
      text-align: left;
+    }
+    .message-inner{
+        flex-wrap: wrap;
     }
     }
      
